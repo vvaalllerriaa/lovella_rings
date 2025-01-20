@@ -48,39 +48,97 @@
     .menu-item:last-child {
         margin-bottom: 0;
     }
+
+    .product {
+        width: 90%;
+        margin-top: 50px;
+    }
+
+    .photo {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .osnowtext {
+        font-size: 24px;
+        margin-top: 20px;
+    }
+
+    .opis {
+        font-size: 16px;
+    }
 }
 
-/* Заголовки */
-.osnowtext {
-    font-family: "Ledger";
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 50%;
-    letter-spacing: -0.02em;
-    text-align: center;
-    color: #000;
-    margin-top: 30px;
+/* Адаптація для середніх екранів (планшети) */
+@media (max-width: 1024px) {
+    .menu {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .menu-item {
+        flex: none;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .photo {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .product {
+        width: 60%;
+        margin-top: 50px;
+    }
+
+    .osnowtext {
+        font-size: 26px;
+        margin-top: 20px;
+    }
+
+    .opis {
+        font-size: 17px;
+    }
 }
 
-/* Стиль для продуктів */
-.product {
-    width: 45%;
-    height: auto;
-    margin-top: 100px;
-}
+/* Для великих екранів (десктопи) */
+@media (min-width: 1025px) {
+    .menu {
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0 10px;
+    }
 
-.opis {
-    font-family: "Jost";
-    font-weight: 400;
-    font-size: 18px;
-    color: #000;
-}
+    .photo {
+        display: flex;
+        gap: 100px;
+        justify-content: center;
+        align-items: center;
+        margin-left: 15%;
+    }
 
-/* Галерея */
-.photo {
-    display: flex;
-    gap: 100px;
-    justify-content: center;
-    align-items: center;
-    margin-left: 15%;
+    .product {
+        width: 45%;
+        margin-top: 100px;
+    }
+
+    .osnowtext {
+        font-size: 30px;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .opis {
+        font-size: 18px;
+    }
 }
