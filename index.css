@@ -1,0 +1,108 @@
+/* Загальний стиль для меню */
+.menu {
+    display: flex;
+    justify-content: space-around;
+    /* Рівномірний розподіл пунктів меню */
+    align-items: center;
+    background: rgba(255, 255, 255, 0.6);
+    /* Напівпрозоре тло */
+    height: 50px;
+    border-bottom: 1px solid #ddd;
+    /* Лінія під меню */
+    padding: 0 10px;
+    /* Внутрішній відступ */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Стиль для пунктів меню */
+.menu-item {
+    flex: 1;
+    /* Кожен пункт займає однакову ширину */
+    text-align: center;
+    text-decoration: none;
+    /* Видалення підкреслення */
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    padding: 10px 0;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Ховер-ефект для пунктів меню */
+.menu-item:hover {
+    color: #007bff;
+    background-color: rgba(0, 123, 255, 0.1);
+    /* Легке підсвічування */
+    border-radius: 5px;
+}
+
+
+
+/* Адаптація для мобільних пристроїв */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        /* Вертикальне меню */
+        height: auto;
+        /* Автоматична висота */
+        padding: 10px 0;
+    }
+
+    .menu-item {
+        flex: none;
+        /* Знімаємо рівномірний розподіл */
+        width: 100%;
+        /* Кожен пункт займає всю ширину */
+        margin-bottom: 5px;
+    }
+
+    .menu-item:last-child {
+        margin-bottom: 0;
+        /* Видалення відступу для останнього пункту */
+    }
+}
+.sagolovok {
+    font-family: "Ledger";
+    font-weight: 400px;
+    font-size: 22px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    line-height: 120%;
+    color: #000;
+}
+
+.osnowtext{
+    font-family: "Ledger";
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 50%;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #000;
+    margin-top: 30px;
+}
+
+.product{
+    width: 45%;
+    height:auto;
+    margin-top: 100px;
+}
+
+.opis{
+    font-family: "Jost";
+    font-weight: 400;
+    font-size: 18px;
+    color: #000;
+
+}
+
+
+.photo{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15%;
+}
